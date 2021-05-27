@@ -1,6 +1,6 @@
 import telebot
 
-bot = telebot.TeleBot("1787773873:AAFqm0MPRzhmtDi7Kiy33aNsmDY2wv2WlKE")
+bot = telebot.TeleBot("1899779814:AAGF2PXvkegd_CILeSlrcn1PIVuTFIGGZsY")
 
 questions = []
 questions.append({
