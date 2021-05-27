@@ -39,6 +39,10 @@ def handle_text(message):
             bot.send_message(message.chat.id, "Yes!!! You are right!!! + 1 point\n")
             index = index + 1
             score = score + 1
+        elif message.text.lower() == questions[index]["ans1"].lower():
+            bot.send_message(message.chat.id, "Yes!!! You are right!!! + 1 point\n")
+            index = index + 1
+            score = score + 1
         else:
             bot.send_message(message.chat.id, "No!!! Incorrect!!!\n")
             index = index+1
