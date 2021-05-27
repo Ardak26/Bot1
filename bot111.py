@@ -5,15 +5,15 @@ bot = telebot.TeleBot("1899779814:AAGF2PXvkegd_CILeSlrcn1PIVuTFIGGZsY")
 questions = []
 questions.append({
     "question":"What is a capital of UK?",
-    "var1": "Madrid", "var2": "London", "var3": "Astana", "var4": "Almaty", "ans": "London"
+    "var1": "Madrid", "var2": "London", "var3": "Astana", "var4": "Almaty", "ans": "London", "ans1": "B"
 })
 questions.append({
     "question": "What is a capital of Spain?",
-    "var1": "Madrid", "var2": "London", "var3": "Astana", "var4": "Almaty", "ans": "Madrid"
+    "var1": "Madrid", "var2": "London", "var3": "Astana", "var4": "Almaty", "ans": "Madrid", "ans1": "A"
 })
 questions.append({
     "question": "What is a capital of Kazakhstan?",
-    "var1": "Madrid", "var2": "London", "var3": "Astana", "var4": "Almaty", "ans": "Astana"
+    "var1": "Madrid", "var2": "London", "var3": "Nur-Sultan", "var4": "Almaty", "ans": "Nur-Sultan", "ans1": "C"
 })
 
 index = 0
@@ -35,7 +35,7 @@ def handle_text(message):
 
     else:
 
-        if message.text.lower() == questions[index]["ans"].lower():
+        if message.text.lower() == questions[index]["ans" or "ans1"].lower():
             bot.send_message(message.chat.id, "Yes!!! You are right!!! + 1 point\n")
             index = index + 1
             score = score + 1
